@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import pp from '../assets/img/ppghibli.png';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout>
+    <section id="about" class="flex flex-col justify-center items-center pt-32">
+        <img class="w-44 h-44 border-2 border-white rounded-full" src={pp.src} alt="Photo de profil" fetchpriority="high"/>
+
+        <div class="flex flex-col md:flex-row justify-start items-baseline max-w-[360px] md:max-w-[396px]">
+            
+            <div>
+                <p class="text-xl md:text-2xl pt-16 text-[#ffc576]">
+                    Bonjour, je suis 
+                </p>
+                <p class="text-3xl md:text-6xl pt-4 font-mono">
+                    Hugo Lacosse
+                </p>
+                <p class="text-xl md:text-2xl pt-4 font-semibold">
+                    Développeur Web Full-Stack
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="career" class="flex flex-col justify-center items-center pt-16 md:pt-32 pb-16 md:pb-32">
+        <div class="flex flex-col md:flex-row justify-start items-baseline w-[360px] md:w-[396px]">
+            <div>
+                <p class="text-xl md:text-2xl pt-4 font-semibold text-[#ffc576]">
+                    Parcours
+                </p>
+                <p class="text-xl md:text-2xl pt-10">
+                    J'ai commencé à apprendre la programmation en autodidacte avant de rejoindre l'École 42 à Paris.</br></br>
+                    À l'École 42, j'ai principalement écrit du code et des programmes en C qui m'ont permis d'apprendre les bases de la programmation et le fonctionnement des systèmes d'exploitations. Je me suis aussi intéressé au Machine Learning et j'ai obtenu la spécialisation "Deep learning" sur la plateforme Coursera.</br></br>
+                    J'ai ensuite choisi de suivre la formation de Développeur Web d'OpenClassroom car je souhaitais me spécialiser dans le développement d'applications web.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="toto">
+        <h2 class="section-title">Diplôme</h2>
+        <div class="content">
+            <p>BAC S-SI</p>
+            <p>Coursera</p>
+            <p>Ecole 42</p> <!-- https://www.coursera.org/specializations/deep-learning -->
+            <p>Openclassroom &emsp; &nbsp; Développeur web (Bac +2)</p>
+        </div>
+    </section>
+</Layout>
