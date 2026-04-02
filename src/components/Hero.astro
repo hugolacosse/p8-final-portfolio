@@ -2,7 +2,7 @@
 import pp from '../assets/img/ppghibli.png';
 
 import Astrologo from '../assets/img/logos/Astrologo.svg';
-import Bash from '../assets/img/logos/Bash.svg';
+import Bash from '../assets/img/logos/bash-modified.png';
 import Css from '../assets/img/logos/Css.svg';
 import Html from '../assets/img/logos/Html5.svg';
 import Js from '../assets/img/logos/Js.svg';
@@ -17,10 +17,10 @@ import Vite from '../assets/img/logos/Vite.svg';
 <section id="#hero" class="flex flex-col justify-center items-center pt-32">
     <img class="w-44 h-44 border-2 border-white rounded-full" src={pp.src} alt="Photo de profil" fetchpriority="high"/>
     <h1 class="text-3xl md:text-4xl font-bold pt-12">Hugo Lacosse</h1>
-    <p class="text-xl md:text-2xl pt-6">Développeur Web</p>
+    <h2 class="text-xl md:text-2xl pt-6">Développeur Web</h2>
 
     <div class="flex flex-wrap justify-center items-baseline gap-6 max-w-[360px] md:max-w-[700px] pt-24 pb-24">
-		<Bash       class="h-8 w-8 md:h-20 md:w-20" />
+		<img class="h-8 md:h-20" src={Bash.src} alt="Bash Logo" fetchpriority="high"/>
 		<Html       class="h-8 w-8 md:h-20 md:w-20 fill-current text-white" />
 		<Css        class="h-8 w-8 md:h-20 md:w-20" />
 		<Tailwind   class="h-8 w-8 md:h-20 md:w-20" />
