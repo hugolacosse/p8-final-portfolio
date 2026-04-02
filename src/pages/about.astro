@@ -15,9 +15,9 @@ import Contact from '../components/Contact.astro';
                 <p class="text-xl md:text-2xl pt-16 text-[#ffc576]">
                     Bonjour, je suis 
                 </p>
-                <p class="text-3xl md:text-6xl pt-4 font-mono">
+                <h1 class="text-3xl md:text-6xl pt-4 font-mono">
                     Hugo Lacosse
-                </p>
+                </h1>
                 <p class="text-xl md:text-2xl pt-4 font-semibold">
                     Développeur Web Full-Stack
                 </p>
@@ -25,28 +25,33 @@ import Contact from '../components/Contact.astro';
         </div>
     </section>
 
-    <section id="career" class="flex flex-col justify-center items-center pt-16 md:pt-32 pb-16 md:pb-32">
-        <div class="flex flex-col md:flex-row justify-start items-baseline w-[360px] md:w-[396px]">
-            <div>
-                <p class="text-xl md:text-2xl pt-4 font-semibold text-[#ffc576]">
-                    Parcours
-                </p>
-                <p class="text-xl md:text-2xl pt-10">
-                    J'ai commencé à apprendre la programmation en autodidacte avant de rejoindre l'École 42 à Paris.</br></br>
-                    À l'École 42, j'ai principalement écrit du code et des programmes en C qui m'ont permis d'apprendre les bases de la programmation et le fonctionnement des systèmes d'exploitations. Je me suis aussi intéressé au Machine Learning et j'ai obtenu la spécialisation "Deep learning" sur la plateforme Coursera.</br></br>
+    <section id="career" class="flex flex-col justify-center items-center">
+        <article class="w-5/6 md:w-3/5 flex flex-col">
+            <div class="mt-16">
+                <h2 class="text-[#ffc576] text-2xl">Parcours</h2>
+                <p class="text-lg mt-4 font-mono">
+                    Passionné d'informatique depuis le collège, j'ai commencé à apprendre la programmation en autodidacte après le lycée, avant de rejoindre l'École 42 à Paris.</br></br>
+                    À l'École 42, j'ai principalement écrit du code et des programmes en langage C, qui m'ont permis d'apprendre les bases de la programmation et le fonctionnement des systèmes d'exploitations. Je me suis aussi intéressé au Machine Learning et j'ai obtenu la spécialisation "Deep learning" sur la plateforme Coursera.</br></br>
                     J'ai ensuite choisi de suivre la formation de Développeur Web d'OpenClassroom car je souhaitais me spécialiser dans le développement d'applications web.
                 </p>
             </div>
-        </div>
+        </article>
     </section>
 
-    <section id="toto">
-        <h2 class="section-title">Diplôme</h2>
-        <div class="content">
-            <p>BAC S-SI</p>
-            <p>Coursera</p>
-            <p>Ecole 42</p> <!-- https://www.coursera.org/specializations/deep-learning -->
-            <p>Openclassroom &emsp; &nbsp; Développeur web (Bac +2)</p>
-        </div>
+    <section id="certifications"  class="flex flex-col justify-center items-center">
+        <article class="w-5/6 md:w-3/5 flex flex-col">
+            <div class="mt-16 mb-32 w-full flex">
+                <div class="flex flex-col grow">
+                    <h3 class="text-[#ffc576] text-xl font-semibold">Diplôme</h3>
+                    <ul class="mt-2">
+                        <li class="text-xl font-medium pt-2">- BAC S-SI</li>
+                        <li class="text-xl font-medium pt-2">- Coursera</li>
+                        <li class="text-xl font-medium pt-2">- Ecole 42</li>
+                        <li class="text-xl font-medium pt-2">- Openclassroom &emsp; &nbsp; Développeur web (Bac +2)</li>
+                        <li class="text-xl font-medium pt-2">- Mettre en oeuvre des animations CSS</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
     </section>
 </Layout>
